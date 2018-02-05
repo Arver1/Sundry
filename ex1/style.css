@@ -1,0 +1,27 @@
+.ex1 div {
+	width: 50px;
+	height: 50px;
+}
+.ex1 .a1 {
+	background: #FF0000;
+}
+.ex1 .a2 {
+	background: #8000FF;
+}
+.ex1 .a3 {
+	background: #1997FF;
+}
+.ex1 .a4 {
+	background: #00FF59;
+}
+.ex1 .a5 {
+	background: #EEFF00;
+}
+.ex1 .hidden {
+  display: none;
+}
+.ex1 button {
+  position: absolute;
+  top: 25px;
+  left: 70px;
+}
