@@ -1,0 +1,78 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+.main-wrapper {
+    display: flex;
+}
+.ex1 {
+    border: 1px solid #000;
+    width: 200px;
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+.ex1__c {
+    width: 50px;
+    height: 50px;
+}
+.ex1__c--red {
+    background: #FF0000;
+}
+.ex1__c--purple {
+    background: #8000FF;
+}
+.ex1__c--blue {
+    background: #1997FF;
+}
+.ex1__c--greenyellow {
+    background: #00FF59;
+}
+.ex1__c--yellow {
+    background: #EEFF00;
+}
+.ex1__c--hidden {
+    display: none;
+}
+.ex1 button {
+    position: absolute;
+    top: 25px;
+    left: 70px;
+}
+.ex2 {
+    border: 1px solid #000;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ex2__c {
+    width: 150px;
+    height: 90px;
+    border: 1px solid #000;
+    position: relative;
+    background-color: #fff;
+}
+.ex2__c::after,
+.ex2__c::before {
+    content: '';
+    width: 60px;
+    height: 20px;
+    border: 1px solid red;
+    position: absolute;
+    top: 60%;
+    box-shadow: 0 15px 10px #000;
+    z-index: -1;
+}
+.ex2__c::after {
+    left: 2px;
+    transform: rotate(-5deg);
+}
+.ex2__c::before {
+    right: 2px;
+    transform: rotate(5deg);
+}
