@@ -1,3 +1,5 @@
+import '../css/style.css';
+
 const imgs = document.querySelectorAll('.ex1__c');
 const btn = document.querySelector('.ex1 button');
 btn.addEventListener('click', function(){
