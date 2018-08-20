@@ -1,0 +1,136 @@
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.main-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.ex {
+    margin: 0 30px 30px 0;
+}
+.ex1 {
+    border: 1px solid #000;
+    width: 200px;
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.ex1__c {
+    width: 50px;
+    height: 50px;
+}
+.ex1__c--red {
+    background: #FF0000;
+}
+.ex1__c--purple {
+    background: #8000FF;
+}
+.ex1__c--blue {
+    background: #1997FF;
+}
+.ex1__c--greenyellow {
+    background: #00FF59;
+}
+.ex1__c--yellow {
+    background: #EEFF00;
+}
+.ex1__c--hidden {
+    display: none;
+}
+.ex1 button {
+    position: absolute;
+    top: 25px;
+    left: 70px;
+}
+.ex2 {
+    border: 1px solid #000;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ex2__c {
+    width: 150px;
+    height: 90px;
+    border: 1px solid #000;
+    position: relative;
+    background-color: #fff;
+}
+.ex2__c::after,
+.ex2__c::before {
+    content: '';
+    width: 60px;
+    height: 20px;
+    border: 1px solid red;
+    position: absolute;
+    top: 60%;
+    box-shadow: 0 15px 10px #000;
+    z-index: -1;
+}
+.ex2__c::after {
+    left: 2px;
+    transform: rotate(-5deg);
+}
+.ex2__c::before {
+    right: 2px;
+    transform: rotate(5deg);
+}
+.ex3 {
+    border: 1px solid #000;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ex3__list {
+    width: 160px;
+    height: 160px;
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.ex3__item {
+    width: 90px;
+    height: 90px;
+    background-color: crimson;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    transform-origin: 100% 99%;
+    overflow: hidden;
+}
+.ex3__item div{
+    margin: 40px 0 0 40px;
+    transform: skew(-18deg) rotate(-72deg);
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+}
+.ex3__item:hover {
+    background-color: gold;
+}
+.ex3__item--1 {
+    transform: rotate(0deg) skew(18deg);
+}
+.ex3__item--2 {
+    transform: rotate(72deg) skew(18deg);
+}
+.ex3__item--3 {
+    transform: rotate(144deg) skew(18deg);
+}
+.ex3__item--4 {
+    transform: rotate(216deg) skew(18deg);
+}
+.ex3__item--5 {
+    transform: rotate(288deg) skew(18deg);
+}
