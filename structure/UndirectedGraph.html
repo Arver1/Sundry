@@ -1,0 +1,50 @@
+<script>
+class UndirectedGraph{
+	constructor(v){
+		this.V = v || 0; //numbers of vertices
+		this.E = 0;
+		this.adj = [];
+		
+		if( v < 0) throw new Error('Numbers of vertices is less than zero');
+		
+		for(let i = 0; i < this.V; i++){
+			this.adj[i]=[];
+		}
+		}
+		
+		getVertices(){
+			return this.V;
+		}
+		
+		getEdges(){
+			return this.E;
+		}
+		
+		validate(v){
+			if(v < 0 || v >= this.V) throw new Error('Vertex is not valid');
+		}
+		
+		degree(v){
+			this.validate(v);
+			return this.adj[v].length;
+		}
+		
+		addEdge(from, to){
+			this.validate(from);
+			this.validate(to);
+			
+			this.E++;
+			
+			this.adj[from].push(to);
+			this.adj[to].push(from);
+		}
+		
+		adjacent(v){
+			this.validate(v);
+			return this.adj[v];
+		}		
+	}
+	
+	const uGraph = new  UndirectedGraph(7);
+
+</script>

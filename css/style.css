@@ -12,9 +12,9 @@ a {
 }
 .ex {
     margin: 0 30px 30px 0;
+    border: 1px solid #000;
 }
 .ex1 {
-    border: 1px solid #000;
     width: 200px;
     height: 90px;
     display: flex;
@@ -50,7 +50,6 @@ a {
     left: 70px;
 }
 .ex2 {
-    border: 1px solid #000;
     width: 200px;
     height: 200px;
     display: flex;
@@ -60,9 +59,9 @@ a {
 .ex2__c {
     width: 150px;
     height: 90px;
-    border: 1px solid #000;
     position: relative;
     background-color: #fff;
+    border: 1px solid #000;
 }
 .ex2__c::after,
 .ex2__c::before {
@@ -84,7 +83,6 @@ a {
     transform: rotate(5deg);
 }
 .ex3 {
-    border: 1px solid #000;
     width: 200px;
     height: 200px;
     display: flex;
@@ -133,4 +131,23 @@ a {
 }
 .ex3__item--5 {
     transform: rotate(288deg) skew(18deg);
+}
+.ex4 {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ex4 button {
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    cursor: pointer;
+    transition: background-color 2s linear 2s;
+}
+.ex4  button:hover {
+    width: 100px;
+    height: 50px;
+    background-color:#1997FF;
 }
