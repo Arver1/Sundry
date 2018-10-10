@@ -29,3 +29,6 @@ scale, translate, rotate
 ``<link rel="preload" href="style.css" as="style">``Поодерживают не все браузеры,но loadCSS представляется потенциальным решением.
 
 - polyfill для fetch whatwg-fetch
+
+### Vue
+-Если на button подвесить метод,не работает пока в методе не прописать e.preventDefault();
