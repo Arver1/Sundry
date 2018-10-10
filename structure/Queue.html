@@ -1,0 +1,53 @@
+<script>
+	class QueueNode{
+		constructor(value){
+			this.value = value;
+			this.next = null;
+		}
+	}
+	
+	class Queue{
+		constructor(){
+			this.first = null;
+			this.last = null;
+			this.n = 0;
+		}
+		
+		enqueue(value){
+			const oldLast = this.last;
+			this.last = new QueueNode(value);
+			if(!this.first) {
+				this.first = this.last;
+			}
+			else {
+				oldLast.next = this.last;
+			}
+			this.n++;
+		}
+		
+		dequeue(){
+		if(!this.n) {
+		return null;
+		}
+			const firstValue = this.first.value;
+			this.first = this.first.next;
+			this.n--;
+			return firstValue;
+		}
+		
+		isEmpty(){
+			return !this.n;
+		}
+		
+		size(){
+			return this.n;
+		}
+	}
+	
+	var queue = new Queue();
+	queue.enqueue(2);
+	queue.enqueue(1);
+	queue.enqueue(true);
+	queue.enqueue(false);
+	queue.enqueue('arver');
+</script>
